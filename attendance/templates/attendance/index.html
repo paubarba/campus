@@ -1,0 +1,24 @@
+{% extends "tpl.html" %}
+
+{% block content %}
+
+    {% if class_list %}
+        <ul>
+        {% for class_data in class_list %}
+            <li>
+                <a href="/attendance/class{{ class_data.id }}/">
+                    Class: {{ class_data.id }}
+                    on {{ class_data.class_date }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No classes available.</p>
+    {% endif %}
+
+    <div>
+        <a href="{% url 'attendance:create' %}" class="btn btn-primary">Create</a>
+    </div>
+
+{% endblock %}

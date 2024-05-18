@@ -1,0 +1,33 @@
+{% extends "tpl.html" %}
+
+{% block content %}
+
+    <h1>
+    Class {{ class_data.id }}
+    </h1>
+    
+    <p>
+        You are looking at class <strong>{{ class_data.id }}</strong>.
+        The class was held on date {{ class_data.class_date }}.
+    </p>
+    
+    <table class="table table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>A.K.A.</th>
+            <th>Assistance</th>
+            <th>{{ class_data.question_of_the_day }}</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.full_name }}</td>
+            <td>{{ student.aka }}</td>
+            <td>{{ student.status }}</td>
+            <td>{{ student.answer_of_the_day }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
