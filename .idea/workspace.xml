@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="107a000a-f23a-4990-b7fa-13bc0a04eaf0" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/quizzes/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quizzes/templates/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quizzes/templates/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quizzes/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/campus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/campus.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/attendance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/attendance/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/attendance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/campus/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/campus/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/campus/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/campus/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/campus/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/asgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/asgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mysite/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/wsgi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +48,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;paubarba&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fbb6d96a-92a4-4beb-b991-bd016b2c0dc8" />
+        <option name="url" value="https://github.com/paubarba/campus.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -50,6 +85,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR",
     "git-widget-placeholder": "master",
@@ -58,15 +94,21 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.language",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mysql",
-      "mariadb"
+      "mariadb",
+      "mysql"
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pauli\PycharmProjects\campus" />
+    </key>
+  </component>
   <component name="RunManager" selected="Django Server.campus">
     <configuration name="Test: campus" type="DjangoTestsConfigurationType" temporary="true">
       <module name="campus" />
@@ -123,7 +165,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-python-sdk-09665e90c3a7-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -136,7 +178,16 @@
       <option name="presentableId" value="Default" />
       <updated>1714832223122</updated>
       <workItem from="1714832230731" duration="6920000" />
-      <workItem from="1716014400658" duration="16495000" />
+      <workItem from="1716014400658" duration="17141000" />
+      <workItem from="1716181388863" duration="2839000" />
+      <workItem from="1716220629437" duration="4325000" />
+      <workItem from="1716252698698" duration="1243000" />
+      <workItem from="1716592581116" duration="8381000" />
+      <workItem from="1717251604599" duration="713000" />
+      <workItem from="1717253374904" duration="969000" />
+      <workItem from="1717748636028" duration="1120000" />
+      <workItem from="1717749860050" duration="3006000" />
+      <workItem from="1717795888533" duration="2915000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -154,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716046944790</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1716054742927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716054742927</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +224,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
