@@ -1,0 +1,37 @@
+{% extends "tpl.html" %}
+
+{% block content %}
+
+    This is the index of the "quizzes" app. Here is a list of all available quizzes.
+
+    {% if quizz_list %}
+        <ul>
+        {% for quiz in quizz_list %}
+            <li>
+                Quiz: {{ quiz.id }}
+                Created At: {{ quiz.created_at }}
+                Title: {{ quiz.title }}
+                <br>
+                <em>{{ quiz.description }}</em>
+                <ul>
+                    {% for response in quiz.responses %}
+                    <li>
+                        <a href="/quizzes/{{ quiz.id }}/{{ response.student_id }}">
+                            {{ response.student_id }}
+                        </a>
+                        {{ response.full_name }}
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <a href="{% url 'quizzes:create' quiz_id=quiz.id %}" class="btn btn-primary">
+                    Attempt now
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No quizzes available.</p>
+    {% endif %}
+
+{% endblock %}

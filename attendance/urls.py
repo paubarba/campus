@@ -1,7 +1,5 @@
 from django.urls import path
 
-from django.urls import path
-
 from . import views
 
 app_name = 'attendance'
@@ -15,3 +13,4 @@ urlpatterns = [
     # url: /attendance/store
     path("store", views.store, name="store"),
 ]
+

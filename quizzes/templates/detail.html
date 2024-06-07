@@ -1,0 +1,21 @@
+{% extends "tpl.html" %}
+
+{% block content %}
+
+    quiz {{ quiz_id }} response for student {{ student_id }}
+
+    <ul>
+        {% for question in questions %}
+        <li>
+            <strong>{{ question.question }}</strong>
+            <br>
+            {% if question.response.answer_text %}
+                <em>{{ question.response.answer_text }}</em>
+            {% else %}
+                {{ question.response.answer }} ({{ question.response.answer_id }})
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
