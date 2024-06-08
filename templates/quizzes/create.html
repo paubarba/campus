@@ -1,0 +1,48 @@
+{% extends "tpl.html" %}
+
+{% block content %}
+
+    <form method="POST" action="{% url 'quizzes:store' quiz_id=quiz_id %}">
+        {% csrf_token %}
+        <p>
+            Student
+            <select name="student_id" required>
+                <option value="">Select...</option>
+                {% for student in students %}
+                    <option value="{{ student.id }}">
+                        {{ student.full_name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </p>
+
+        <ul>
+            {% for question in questions %}
+            <li>
+                <strong>{{ question.question }}</strong>
+                <br>
+                {% if question.answers %}
+                    <ul>
+                        {% for answer in question.answers %}
+                            <li>
+                                <label>
+                                    <input type="radio" name="{{ question.id }}" value="{{ answer.id }}" required>
+                                    {{ answer.answer }}
+                                </label>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <textarea name="{{ question.id }}" required></textarea>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+
+        <button type="submit" class="btn btn-primary">
+            Submit
+        </button>
+    </form>
+
+
+{% endblock %} 

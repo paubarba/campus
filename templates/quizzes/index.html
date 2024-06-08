@@ -1,9 +1,13 @@
 {% extends "tpl.html" %}
 
 {% block content %}
+    
+    <H1> QUIZZES </H1>
 
-    This is the index of the "quizzes" app. Here is a list of all available quizzes.
+    This is the index of the <I>quizzes</I> app. Here is a list of all <B>available</B> quizzes.
 
+    
+    
     {% if quizz_list %}
         <ul>
         {% for quiz in quizz_list %}
@@ -33,5 +37,17 @@
     {% else %}
         <p>No quizzes available.</p>
     {% endif %}
-
+    <style>
+        .image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-bottom: 50px; 
+            margin-right: 50px; 
+        }
+    </style>
+    <div class="container">
+    <img width="500px" height="DEFAULT"  src="https://www.uvg.edu.mx/hubfs/Imported_Blog_Media/original-75e0333848c50d49ba9c6b698d31a3a0-1.jpg#keepProtocol"  class="image">
+    </div>
+    
 {% endblock %}
