@@ -1,8 +1,12 @@
 {% extends "tpl.html" %}
 
-<br>
 {% block content %}
-
+    <h1>ATTENDANCE</h1>
+    <br>
+    Make sure to arrive on time!
+    <br>
+    <br>
+    
     {% if class_list %}
         <ul>
         {% for class_data in class_list %}
@@ -21,5 +25,17 @@
     <div>
         <a href="{% url 'attendance:create' %}" class="btn btn-primary">Create</a>
     </div>
+    
+    <style>
+        .image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-bottom: 50px; 
+            margin-right: 50px; 
+        }
+    </style>
+
+    <img width="580px" height="DEFAULT"  src="https://attendanceradar.com/wp-content/uploads/2023/10/students.webp"  class="image">
 
 {% endblock %}

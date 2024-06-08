@@ -4,17 +4,18 @@
     
     <H1> QUIZZES </H1>
 
-    This is the index of the <I>quizzes</I> app. Here is a list of all <B>available</B> quizzes.
-
-    
+    <br>
+    This is the index of the <I>quizzes</I> app. Here is a list of all <B>available</B> quizzes:
+    <br>
+    <br>
     
     {% if quizz_list %}
         <ul>
         {% for quiz in quizz_list %}
             <li>
-                Quiz: {{ quiz.id }}
-                Created At: {{ quiz.created_at }}
-                Title: {{ quiz.title }}
+                <b>Quiz:</b> {{ quiz.id }} <br>
+                <b>Created At:</b> {{ quiz.created_at }} <br>
+                <b>Title:</b> {{ quiz.title }}<br>
                 <br>
                 <em>{{ quiz.description }}</em>
                 <ul>
@@ -27,7 +28,7 @@
                     </li>
                     {% endfor %}
                 </ul>
-
+             <br>
                 <a href="{% url 'quizzes:create' quiz_id=quiz.id %}" class="btn btn-primary">
                     Attempt now
                 </a>
@@ -37,6 +38,7 @@
     {% else %}
         <p>No quizzes available.</p>
     {% endif %}
+
     <style>
         .image {
             position: absolute;
@@ -46,8 +48,8 @@
             margin-right: 50px; 
         }
     </style>
-    <div class="container">
-    <img width="500px" height="DEFAULT"  src="https://www.uvg.edu.mx/hubfs/Imported_Blog_Media/original-75e0333848c50d49ba9c6b698d31a3a0-1.jpg#keepProtocol"  class="image">
-    </div>
+
+    <img width="800px" height="DEFAULT"  src="https://www.uvg.edu.mx/hubfs/Imported_Blog_Media/original-75e0333848c50d49ba9c6b698d31a3a0-1.jpg#keepProtocol"  class="image">
+
     
 {% endblock %}

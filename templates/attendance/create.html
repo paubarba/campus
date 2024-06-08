@@ -1,0 +1,58 @@
+{% extends "tpl.html" %}
+
+{% block content %}
+
+    <form method="POST" action="{% url 'attendance:store' %}">
+        {% csrf_token %}
+        
+        <div class="mb-3">
+            <label class="form-label">Class date:</label>
+            <input type="date" class="form-control" value="" name="class_date" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Class ID:</label>
+            <input type="number" class="form-control" value="" step="1" min="1" max="20" name="class_id" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Question of the day:</label>
+            <input type="text" class="form-control" value="" name="question_of_the_day" required>
+        </div>
+
+        <div class="mb-3">
+            {% comment %}<a href="{% url 'campus:students-index' %}" class="btn btn-secondary">Back</a>{% endcomment %}
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+
+        <table class="table table-hover">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>A.K.A.</th>
+                <th>Assistance</th>
+                <th>Answer of the day</th>
+            </tr>
+            {% for student in students %}
+            <tr>
+                <td>{{ student.id }}</td>
+                <td>{{ student.full_name }}</td>
+                <td>{{ student.aka }}</td>
+                <td>
+                    <select name="{{ student.id }}.status" required>
+                        <option value="">-</option>
+                        <option value="present">Present</option>
+                        <option value="absent">Absent</option>
+                        <option value="excused">Excused</option>
+                        <option value="late">Late</option>
+                        <option value="virtual">Virtual</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" value="" name="{{ student.id }}.answer_of_the_day">
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </form>
+
+{% endblock %}
