@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="107a000a-f23a-4990-b7fa-13bc0a04eaf0" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/templates/attendance/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/attendance/detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/attendance/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/templates/attendance/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/attendance/templates/attendance/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quizzes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/quizzes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/quizzes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quizzes/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/quizzes/templates/create.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
